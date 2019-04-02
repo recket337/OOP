@@ -22,8 +22,12 @@ import java.util.ArrayList;
             return smsCount;
         }
 
+        public Integer getCustomers(){
+            return customers;
+        }
+
         public String toString() {
-            return "Rate with" + customers + "has : Minutes: " + minutesCount + ", SMS: " + smsCount ;
+            return "Rate with " + customers + " customers has : Minutes: " + minutesCount + ", SMS: " + smsCount ;
         }
 
         public static void sortBySMS(ArrayList<SimpleRate> array){
