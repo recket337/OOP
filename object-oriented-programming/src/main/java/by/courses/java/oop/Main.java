@@ -10,6 +10,30 @@ import java.util.Scanner;
 public class Main {
         public static void main(String[] args) {
 
+            ArrayList<SimpleRate> rates = new ArrayList<>();
+            SimpleRate simpleRate1 = new SimpleRate(100, 60, 50);
+            SimpleRate simpleRate2 = new SimpleRate(25, 120, 100);
+            SimpleRate simpleRate3 = new SimpleRate(50, 300, 200);
+
+            rates.add(simpleRate1);
+            rates.add(simpleRate2);
+            rates.add(simpleRate3);
+
+            MMSRate mmsRate1 = new MMSRate(500, 50, 50, 20);
+            MMSRate mmsRate2 = new MMSRate(350, 100, 70, 40);
+            MMSRate mmsRate3 = new MMSRate(460, 150, 100, 70);
+
+            rates.add(mmsRate1);
+            rates.add(mmsRate2);
+            rates.add(mmsRate3);
+
+            InternetRate internetRate1 = new InternetRate(1240, 50, 50, 200);
+            InternetRate internetRate2 = new InternetRate(2640, 100, 70, 400);
+            InternetRate internetRate3 = new InternetRate(1750, 150, 100, 700);
+
+            rates.add(internetRate1);
+            rates.add(internetRate2);
+            rates.add(internetRate3);
 
             Scanner scan = new Scanner(System.in);
 
